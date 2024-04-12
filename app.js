@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("assets"));
 
 
-app.get("https://certification-request.netlify.app", (req, res) => {
+app.get("/", (req, res) => {
   res.render("request_form", { title: "Request Form" });
 });
 
